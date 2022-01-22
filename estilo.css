@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    
+}
+img#banner{
+    position: absolute;
+    width: 100%;
+}
+header{
+    display: ;
+    z-index: 2;
+    background-color:rgba(55, 139, 139, 0.5);
+    width: 100%;
+    
+}
+div#menu{
+   position: absolute;
+   background-color: brown;
+}
+main{
+    
+}
