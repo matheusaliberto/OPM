@@ -1,28 +1,113 @@
+/*RESET inicial*/
 *{
     margin: 0;
     padding: 0;
-}
-a{
-    text-decoration: none;
+    font-family: sans-serif;
 }
 body{
-    
+    color: black;
 }
-img#banner{
-    position: absolute;
+a{text-decoration: none;}
+ul{list-style: none;}
+img{ max-width: 100%;}
+
+/*Cabeçalho*/
+.cabecalho{
     width: 100%;
+    float: left;
+    position: fixed;
 }
-header{
-    display: ;
-    z-index: 2;
-    background-color:rgba(55, 139, 139, 0.5);
+.logo{
+    margin-left: 5px;
+    width: 64px;
+    height: 64px;
+    float: left;
+    background: url(imagens/OPM-logo-p.png) center center/64px no-repeat;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    font-size: larger;
+    float: right;
+    border-radius: 56px;
+    margin: 5px;
+
+    background-color: grey;
+    cursor: pointer;
+}
+.btn-close{
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    font-size: 2.7em;
+    border-radius: 56px;
+    margin: 12px 8px 0 0;
+    float: right;
+    cursor: pointer;
+    color: white;
+}
+.menu{
     width: 100%;
-    
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.9);
+    top: 0;
+    left: 0;
+    display: none;
 }
-div#menu{
-   position: absolute;
-   background-color: brown;
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
 }
-main{
-    
+.menu li a{
+    color: white;
+    font-size: 3em;
+
+}
+.menu li a:hover{
+    border: 1px solid grey;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 98%;
+    padding: 1%;
+    height: 80%;
+    float: left;
+    text-align: center;
+    background: url(imagens/banner-retrato.jpg) center center/100% no-repeat;
+}
+.containers{
+    width: 100%;
+    float: left; 
+}
+.container{
+    padding: 3%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.container img{
+    border-radius: 10px 10px 0 0 ;
+}
+.container a{
+    color: black;
+}
+.inner{
+    padding: 0 7%;
+}
+.contatos{
+    text-align: center;
+    padding: 3% 4%;
+}
+.rodape{
+    padding: 2%;
+    display: inline-block;
+    width: 96%;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
