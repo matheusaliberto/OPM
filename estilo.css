@@ -70,14 +70,14 @@ img{ max-width: 100%;}
 }
 
 .banner{
+    float: center;
     width: 100%;
-    float: left;
     text-align: center;
     background: url(imagens/banner-retrato.jpg) center center/100% no-repeat;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 .btn-banner{
-    margin: 90vh auto 10vh;
+    margin: 60vh auto 10vh;
     padding: 5px 30px;
     border-radius: 15px;
     border: 1px solid black;
@@ -95,7 +95,7 @@ img{ max-width: 100%;}
 .containers{
     padding: 4px;
     float: left; 
-    background-color: rgb(209, 98, 33);
+    background-color: rgb(211, 93, 25);
 }
 .container{
     background-color: rgb(211, 211, 211);
