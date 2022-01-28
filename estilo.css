@@ -4,9 +4,6 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    color: black;
-}
 a{text-decoration: none;}
 ul{list-style: none;}
 img{ max-width: 100%;}
@@ -32,9 +29,9 @@ img{ max-width: 100%;}
     float: right;
     border-radius: 56px;
     margin: 5px;
-
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
+    color: white;
 }
 .btn-close{
     width: 56px;
@@ -93,9 +90,16 @@ img{ max-width: 100%;}
 .container img{
     border-radius: 10px 10px 0 0 ;
 }
-.container a{
+a{
     color: black;
 }
+.container  p  a{
+    color: rgba(255, 0, 0, 0.726)
+}
+.container  p  a:hover{
+    color: rgba(117, 0, 0, 0.726)
+}
+
 .inner{
     padding: 0 7%;
 }

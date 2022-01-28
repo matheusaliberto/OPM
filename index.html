@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </head>
-<body>
+<body id='inicio'>
     <header class='cabecalho'>
         <a href="#">
             <h1 class='logo'>
@@ -18,14 +18,10 @@
         <nav class='menu'>
             <a class='btn-close'><i class="far fa-times-circle fa-lg"></i></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Canal no Youtube</a>
-                </li>
-                <li><a href="#">Contatos</a></li>
+                <li class='btn-item'><a href="#inicio">Inicio</a></li>
+                <li class='btn-item'><a href="#sobre">Sobre</a></li>
+                <li class='btn-item'><a href="#transmissao">Onde assistir</a></li>
+                <li class='btn-item'><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -33,30 +29,36 @@
         <img src="imagens/banner-retrato.jpg" alt="banner">
     </div>
     <main class='containers'>
-        <article class='container'>
+        <article class='container' id='sobre'>
             <a href=""><img src='imagens/poster-todos.jpg' alt="trailer"></a>
             <div class="inner">
                 <h3><a href="">Um breve resumo</a></h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repellendus, consequatur eligendi consequuntur obcaecati, cupiditate eius modi sit aut ab pariatur natus? Blanditiis temporibus debitis ratione, architecto omnis expedita. Modi?
+                <p>O Próximo mundo é uma série animada pós apocalíptica ambientada no Brasil. Criada por Douglas Xavier do canal <a class='link-txt' href="https://www.youtube.com/c/TheWalkerCenter" target="_blank">The Walker center</a>, tem previsão de estreia em 2022 e ja conta com <a href="#trailer" class='link-txt'>trailer</a> e posters quem podem ser obtido diretamente pelo <a class='link-txt' href="https://discord.gg/nFGdNPSx6D" target="_blank">discord oficial</a> do canal.</p>
             </div>
         </article>
-        <article class='container'>
-            <a href=""><img src="imagens/trailer.jpg" alt="trailer"></a>
+        <article class='container' id='trailer'>
+            <a href="https://www.youtube.com/watch?v=Vz4ToBZVC3M&list=PLSHIAW9XZ-H60bqzaca_lgzD7HgzY8aQ7" target='_blank'><img src="imagens/trailer.jpg" alt="trailer"></a>
             <div class="inner">
-                <h3><a href="">Trailer O Próximo Mundo</a></h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repellendus, consequatur eligendi consequuntur obcaecati, cupiditate eius modi sit aut ab pariatur natus? Blanditiis temporibus debitis ratione, architecto omnis expedita. Modi?
+                <h2><a href="https://www.youtube.com/watch?v=Vz4ToBZVC3M&list=PLSHIAW9XZ-H60bqzaca_lgzD7HgzY8aQ7" target='_blank'>Trailer O Próximo Mundo</a></h2>
+                <p><a class='link-txt' href="https://www.youtube.com/watch?v=Vz4ToBZVC3M&list=PLSHIAW9XZ-H60bqzaca_lgzD7HgzY8aQ7" target="_blank">Clique aqui</a> para assistir o trailer oficial.</p>
             </div>
         </article>
-        <article class='container'>
-            <a href=""><img src="imagens/logo-twc.jfif" alt="trailer"></a>
+        <article class='container' id='transmissao'>
+            <a href="https://www.youtube.com/c/TheWalkerCenter" target='_blank'><img src="imagens/logo-twc.jfif" alt="trailer"></a>
             <div class="inner">
-                <h3><a href="">Canal do Youtube</a></h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repellendus, consequatur eligendi consequuntur obcaecati, cupiditate eius modi sit aut ab pariatur natus? Blanditiis temporibus debitis ratione, architecto omnis expedita. Modi?
+                <h2><a href=" https://www.youtube.com/c/TheWalkerCenter" target='_blank'>Onde posso assistir a série?</a></h2>
+                <p>A série será transmitida através do canal <a class='link-txt' href="https://www.youtube.com/c/TheWalkerCenter" target="_blank">The walker center no Youtube</a>. Previsão de estréia ainda em 2022.</p>
             </div>
         </article>
-        <section class='contatos'>
+        <section class='contatos' id='contatos'>
             <h2>Contatos e redes socias</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi possimus necessitatibus sequi enim suscipit magnam, sapiente et nam ipsum impedit, maiores id reprehenderit quaerat aliquid nisi? Odio magnam veniam dicta.</p>
+            <div>
+                <a href="https://www.youtube.com/c/TheWalkerCenter" target="_blank" alt="external"><img src="imagens/yt.png"></a>
+                <a href="https://discord.gg/nFGdNPSx6D" target="_blank" alt="external"><img src="imagens/disc.png" alt=""></a>
+                <a href="https://www.instagram.com/dougrasxtwc/" target="_blank" alt="external"><img src="imagens/insta.png" alt=""></a>
+                <a href="https://www.facebook.com/THEWALKERCERTER" target="_blank" alt="external"><img src="imagens/face.png" alt=""></a>
+                <a href="https://twitter.com/DougalsXavier" target="_blank" alt="external"><img src="imagens/Twitter.png" alt=""></a>
+            </div>
         </section>
     </main>
     <footer class='rodape'>
@@ -69,6 +71,14 @@
             $(".btn-menu").fadeOut();
         });
         $(".btn-close").click(function(){
+            $(".menu").fadeOut();
+            $(".btn-menu").fadeIn();
+        });
+        $(".btn-item").click(function(){
+            $(".menu").fadeOut();
+            $(".btn-menu").fadeIn();
+        });
+        $(".menu").click(function(){
             $(".menu").fadeOut();
             $(".btn-menu").fadeIn();
         });    
