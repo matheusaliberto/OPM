@@ -72,27 +72,27 @@ img{ max-width: 100%;}
 }
 
 .banner{
+    background: url(imagens/banner.jpg)center center/100% no-repeat;
     float: center;
     width: 100%;
     text-align: center;
-    background: url(imagens/banner-retrato.jpg) center center/100% no-repeat;
-    border-bottom: 2px solid rgb(255, 255, 255);
 }
 .btn-banner{
-    margin: 80% auto 10%;
+    margin: 30% auto 5%;
+    float: center;
     padding: 5px 30px;
     border-radius: 15px;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.507);
 }
 .btn-banner a{
-    color: rgb(187, 179, 179);
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
     font-weight: bolder;
 }
 .btn-banner:hover{
     cursor: pointer;
-    background-color: rgba(7, 9, 26, 0.507);
+    background-color: rgba(88, 37, 2, 0.507);
 }
 .containers{
     padding: 4px;
@@ -142,12 +142,34 @@ a{
     color: blueviolet;
 }
 @media screen and(min-width: 500px) {
-    .banner{
-        float: center;
+    .cabecalho{
         width: 100%;
+        float: left;
+        position: fixed;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        width: 48px;
+        height: 48px;
         text-align: center;
-        background: url(imagens/banner.jpg) no-repeat;
-        border-bottom: 2px solid rgb(255, 255, 255);
+        font-size: 2.7em;
+        border-radius: 56px;
+        margin: 5px;
+        float: right;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        border: 4px solid white;
+    }
+    .menu{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);
+        top: 0;
+        left: 0;
+        
     }
     
 }
